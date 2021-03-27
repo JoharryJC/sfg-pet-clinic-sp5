@@ -1,7 +1,13 @@
 package guru.springframework.sfgpetclinicsp5.model;
 
+/**
+ * 
+ */
 public class Person extends BaseEntity {
 
+	
+	private static final long serialVersionUID = -6458205070801349459L;
+	
 	private String firstName;
 	private String lastName;
 	public String getFirstName() {
