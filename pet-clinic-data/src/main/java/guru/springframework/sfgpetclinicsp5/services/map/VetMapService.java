@@ -1,6 +1,8 @@
 package guru.springframework.sfgpetclinicsp5.services.map;
 
 import java.util.Set;
+
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import guru.springframework.sfgpetclinicsp5.model.Speciality;
@@ -9,6 +11,7 @@ import guru.springframework.sfgpetclinicsp5.services.SpecialtyService;
 import guru.springframework.sfgpetclinicsp5.services.VetService;
 
 @Service
+@Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService  {
 
 	private final SpecialtyService specialtyService;	

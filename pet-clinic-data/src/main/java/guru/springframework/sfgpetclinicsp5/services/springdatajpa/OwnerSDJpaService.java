@@ -56,6 +56,10 @@ public class OwnerSDJpaService implements OwnerService {
 	@Override
 	public Owner save(Owner object) {
 		// TODO Auto-generated method stub
+		System.out.println("################################################");
+		System.out.println("It's running save in @Profile(\"springdatajpa\")");
+		System.out.println("It's running save in @Profile(\"springdatajpa\")");
+		System.out.println("It's running save in @Profile(\"springdatajpa\")");
 		return ownerRepository.save(object);
 	}
 
