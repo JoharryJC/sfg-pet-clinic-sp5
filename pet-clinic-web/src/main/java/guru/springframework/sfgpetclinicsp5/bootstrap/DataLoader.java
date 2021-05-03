@@ -62,11 +62,11 @@ public class DataLoader implements CommandLineRunner {
 		
 		Speciality surgery = new Speciality();
 		radiology.setDescription("Surgery");
-		Speciality savedSurgery = specialtyService.save(radiology);
+		Speciality savedSurgery = specialtyService.save(surgery);
 		
 		Speciality dentistry = new Speciality();
 		radiology.setDescription("Dentistry");
-		Speciality savedDentistry = specialtyService.save(radiology);
+		Speciality savedDentistry = specialtyService.save(dentistry);
 		
 		Owner owner1 = new Owner();
 		//owner1.setId(1L);
@@ -75,6 +75,8 @@ public class DataLoader implements CommandLineRunner {
 		owner1.setAddress("123 Brickerel");
 		owner1.setCity("Miami");
 		owner1.setTelephone("1231231234");
+		
+		//Owner.builder().address("ASDF").build();
 		
 		Pet mikesPet = new Pet();
 		mikesPet.setPetType(savedDogPetType);
